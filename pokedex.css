@@ -1,0 +1,125 @@
+body{
+  margin: 0px;
+  background-color: rgb(253, 243, 243);
+}
+.pokemons{
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+  gap:15px;
+ 
+}
+.container{
+  box-sizing: border-box;
+  border-radius: 40px;
+  height: 300px;
+}
+
+.container img{
+  position: relative;
+  width: 50%;
+  left: 38% ;
+  bottom: 20%;
+}
+.container img:hover{
+  width: 80%;
+}
+.grama{
+  background-color: rgb(99, 216, 156);
+}
+.fogo{
+  background-color: rgb(194, 46, 46);
+}
+.agua{
+  background-color: rgb(93, 170, 201);
+}
+.eletrico{
+  background-color: rgb(235, 235, 16);
+}
+.grama button{
+  background-color: rgb(107, 199, 138);
+}
+.fogo button{
+  background-color: rgb(226, 80, 80);
+}
+.agua button{
+  background-color: rgb(142, 218, 248);
+}
+.eletrico button{
+  background-color: rgb(230, 230, 88);
+}
+.container h2{
+  margin-left: 8%;
+  margin-top: 8%;
+  color: antiquewhite;
+  font-size: 20px;
+}
+.container button{
+  display: block;
+  width: 25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+header h1{
+  margin-left: 50px;
+  color: rgb(248, 248, 247);
+  border: solid 1px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.icon{
+  margin-right: 50px;
+  display: none;
+}
+.opcoes{
+  display: flex;
+  align-items: center;
+}
+.opcoes p{
+  font-size: 20pt;
+  margin-right: 50px;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 20px;
+}
+.opcoes p:hover{
+  background-color: rgb(199, 10, 10);
+}
+@media(max-width: 1550px){
+  .pokemons{
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+@media(max-width: 1000px){
+  .pokemons{
+    grid-template-columns: 400px 400px;
+  }
+  .opcoes{
+    display: none;
+  }
+  .icon{
+    display: flex;
+  }
+}
+@media(max-width: 700px){
+  .pokemons{
+    grid-template-columns: 400px;
+  }
+}
