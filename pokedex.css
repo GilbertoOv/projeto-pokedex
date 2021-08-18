@@ -7,14 +7,14 @@ body{
   margin-left: 50px;
   margin-right: 50px;
   display: grid;
-  grid-template-columns: 350px 350px 350px 350px;
-  gap:15px;
+  grid-template-columns: 21rem 21rem 21rem 21rem;
+  gap:1rem;
  
 }
 .container{
   box-sizing: border-box;
-  border-radius: 40px;
-  height: 300px;
+  border-radius: 3rem;
+  height: 18rem;
 }
 
 .container img{
@@ -54,21 +54,21 @@ body{
   margin-left: 8%;
   margin-top: 8%;
   color: antiquewhite;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .container button{
+  font-size: 1rem;
   display: block;
   width: 25%;
   padding-top: 3%;
   padding-bottom: 3%;
-  border-radius: 50px;
+  border-radius: 10rem;
   border: 0px;
   color: white;
   margin-top: 5%;
   margin-left: 5%;
   font-weight: bolder;
 }
-
 
 header{
   display: flex;
@@ -85,6 +85,7 @@ header h1{
 }
 
 .icon{
+  width:4rem;
   margin-right: 50px;
   display: none;
 }
@@ -93,7 +94,7 @@ header h1{
   align-items: center;
 }
 .opcoes p{
-  font-size: 20pt;
+  font-size: 2rem;
   margin-right: 50px;
   color: aliceblue;
   padding: 10px;
@@ -102,14 +103,20 @@ header h1{
 .opcoes p:hover{
   background-color: rgb(199, 10, 10);
 }
-@media(max-width: 1550px){
+@media(max-width: 1200px){
+  html{
+    font-size: 11px;
+  }
   .pokemons{
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 21rem 21rem 21rem 21rem;
   }
 }
 @media(max-width: 1000px){
+  html{
+    font-size: 10px;
+  }
   .pokemons{
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 21rem 21rem 21rem;
   }
   .opcoes{
     display: none;
@@ -119,7 +126,11 @@ header h1{
   }
 }
 @media(max-width: 700px){
+  
+  html{
+    font-size: 9px;
+  }
   .pokemons{
-    grid-template-columns: 400px;
+    grid-template-columns: 21rem 21rem;
   }
 }
